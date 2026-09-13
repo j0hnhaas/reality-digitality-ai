@@ -46,16 +46,56 @@ digraph BioPsychoSoziosphaere {
       ];
     }
 
-    untere_flaeche [
+    zwischenraum_unten [
       label="",
       shape="box",
       width="9.50",
-      height="2.00",
+      height="0.65",
       fixedsize="true",
       style="invis"
     ];
 
-    technosphaere_flaeche -> untere_flaeche [
+    {
+      rank="same";
+
+      welt [
+        label="Welt",
+        shape="doublecircle",
+        width="1.15",
+        height="1.15",
+        fixedsize="true",
+        color="black",
+        fontcolor="black",
+        penwidth="1.4"
+      ];
+
+      abstand_welt_mensch [
+        label="",
+        shape="box",
+        width="6.30",
+        height="0.01",
+        fixedsize="true",
+        style="invis"
+      ];
+
+      mensch [
+        label="Mensch",
+        shape="circle",
+        width="1.15",
+        height="1.15",
+        fixedsize="true",
+        color="black",
+        fontcolor="black",
+        penwidth="1.4"
+      ];
+    }
+
+    welt -> abstand_welt_mensch -> mensch [
+      style="invis",
+      weight="100"
+    ];
+
+    technosphaere_flaeche -> zwischenraum_unten -> abstand_welt_mensch [
       style="invis",
       weight="100"
     ];
