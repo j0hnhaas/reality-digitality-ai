@@ -12,7 +12,8 @@ digraph BioPsychoSoziosphaere {
     labeljust="c";
     fontsize="22";
     fontname="Arial Bold";
-    color="#355C7D";
+    color="black";
+    fontcolor="black";
     penwidth="2.2";
     style="rounded";
     margin="24";
