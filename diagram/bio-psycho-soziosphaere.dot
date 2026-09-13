@@ -1,0 +1,30 @@
+digraph BioPsychoSoziosphaere {
+  graph [
+    charset="UTF-8",
+    bgcolor="white",
+    pad="0.25",
+    fontname="Arial"
+  ];
+
+  subgraph cluster_bio_psycho_soziosphaere {
+    label="Bio-Psycho-Soziosphäre";
+    labelloc="t";
+    labeljust="c";
+    fontsize="22";
+    fontname="Arial Bold";
+    color="#355C7D";
+    penwidth="2.2";
+    style="rounded";
+    margin="24";
+
+    // Unsichtbarer Platzhalter; wird durch die späteren Inhalte ersetzt.
+    rahmenflaeche [
+      label="",
+      shape="box",
+      width="9",
+      height="5",
+      fixedsize="true",
+      style="invis"
+    ];
+  }
+}
